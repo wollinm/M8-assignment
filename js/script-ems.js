@@ -1,13 +1,22 @@
 // CREATE AN ARRAY OF EMPLOYEES
-
+//remove let - was defined in script-array-practice
+employees = [
+    'Molly Wollin',
+    'Paul Vogel',
+    'Kevin Colegrove',
+    'Tho Nguyen',
+    'Louis Chen'
+]
 
 // CHECK TO SEE IF STORAGE OBJECT EXISTS WHEN THE PAGE LOADS
 // IF DOES, RETURN STORAGE OBJECT INTO ARRAY INSTEAD OF POPULATED ARRAY
 
 
 // GET DOM ELEMENTS
+const $ = (id) => document.getElementById(id)
 
-
+//get the form
+let form = document.getElementById('addForm')
 // BUILD THE EMPLOYEES TABLE WHEN THE PAGE LOADS
 
 
