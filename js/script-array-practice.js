@@ -1,4 +1,4 @@
-
+//Magdalena Wollin
 //STEP 1
 console.log('Step 1....')
 let myMovies = [
