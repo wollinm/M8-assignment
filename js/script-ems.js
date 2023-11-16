@@ -1,6 +1,5 @@
 //Magdalena Wollin
 // CREATE AN ARRAY OF EMPLOYEES
-//remove let - was defined in script-array-practice
 employees = [
     'Molly Wollin',
     'Paul Vogel',
@@ -8,9 +7,7 @@ employees = [
     'Tho Nguyen',
     'Louis Chen'
 ]
-
-// CHECK TO SEE IF STORAGE OBJECT EXISTS WHEN THE PAGE LOADS
-// IF DOES, RETURN STORAGE OBJECT INTO ARRAY INSTEAD OF POPULATED ARRAY
+//Magdalena Wollin
 
 // DOM handler function
 const $ = (id) => document.getElementById(id)
