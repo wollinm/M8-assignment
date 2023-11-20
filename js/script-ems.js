@@ -269,12 +269,12 @@ empTable.addEventListener('click', (e) => {
     if (e.target.classList.contains('delete')) {
         // DISPLAY CONFIRMATION OF THE DELETE TO THE USER
         if (confirm('Are you sure you want to delete this employee?')) {
-            // remove the selected employee
-            //row.removeChild(e.target.parentElement)
+            // get index to delete from table and from storage
             let rowToDelete = e.target.parentElement.parentElement.rowIndex - 1
             console.log('row selected to delete from table: ' + rowToDelete)
-            rowToDeleteFromStorage = rowToDelete -1;
+            let rowToDeleteFromStorage = rowToDelete -1;
             console.log('row selected to delete from employees storage: ' + rowToDeleteFromStorage)
+            // remove the selected employee
             empTable.deleteRow(e.target.parentElement.parentElement.rowIndex)
             employeeCount = employeeCount - 1;
             $('empCount').value = employeeCount;
@@ -283,12 +283,6 @@ empTable.addEventListener('click', (e) => {
             console.log('increment employee count 2: ' + $('empCount').value);
             console.log('employeeCount 2: ' + employeeCount)
             //delete from local storage too
-            //console.log('before: ' + employees);
-            //employees.splice(rowToDelete); 
-            //localStorage.removeItem('employees',rowToDelete)
-            //localStorage.setItem('employees',JSON.stringify(employees))
-            //remove item selected, second parameter is the number of items to delete 
-            //employees.slice(rowToDeleteFromStorage, 1);
             employees.splice(rowToDeleteFromStorage, 1);
             // Put the object into storage
             localStorage.setItem('employees', JSON.stringify(employees));
